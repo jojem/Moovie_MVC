@@ -1,0 +1,16 @@
+﻿@using Moovie.Models
+@model Film[]
+
+
+<title>@ViewBag.Title</title>
+
+<h1>@ViewData["Title"]</h1>
+<h2>List of films</h2>
+@foreach (Film f in Model)
+{
+    <h3>@f.FilmName</h3>
+    <p>Year: @f.Year </p>
+    <p>Genre: @f.Genre</p>
+    <p>Country: @f.Country</p>
+}
+
